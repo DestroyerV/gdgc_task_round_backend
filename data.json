@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "Laptop",
+    "description": "A high-performance laptop",
+    "seller": "John",
+    "rating": 4.5
+  },
+  {
+    "id": "2",
+    "title": "mobile",
+    "description": "mobile",
+    "seller": "amazon",
+    "rating": "4.5"
+  }
+]
