@@ -1,10 +1,10 @@
-import express from "express";
-import bodyParser from "body-parser";
-import fs from "fs/promises";
+const express = require("express");
+const bodyParser = require("body-parser");
+const fs = require("fs").promises;
 
 const app = express();
 const PORT = 3000;
-const DATA_FILE = "../data.json";
+const DATA_FILE = "./data.json";
 
 app.use(bodyParser.json());
 
@@ -27,6 +27,10 @@ const writeData = async (data) => {
 };
 
 // Routes
+
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to the Listings API" });
+});
 
 // 1. GET All Listed Items
 app.get("/listing", async (req, res) => {
