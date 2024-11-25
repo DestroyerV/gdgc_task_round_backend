@@ -4,7 +4,7 @@ import fs from "fs/promises";
 
 const app = express();
 const PORT = 3000;
-const DATA_FILE = "./data.json";
+const DATA_FILE = "../data.json";
 
 app.use(bodyParser.json());
 
